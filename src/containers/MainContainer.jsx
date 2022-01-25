@@ -105,6 +105,8 @@ function MainContainer() {
 
   const classes = useStyles();
 
+  const basePath = process.env.REACT_APP_BASE_URL
+
   return (
     <div className={classes.main}>
       <div className={clsx(classes.content, {
@@ -115,11 +117,11 @@ function MainContainer() {
             <Navbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} drawerWidth={drawerWidth}/>
             <div className={classes.drawerHeader} />
             <Switch>
-              <Route path="/" exact>
-                <Redirect to="/dashboard" />
+              <Route path={basePath} exact>
+                <Redirect to={basePath+"/dashboard"} />
               </Route>
-              <Route path="/dashboard" component={Dashboard}/>
-              <Route path="/administrator" component={Administrator}/>
+              <Route path={basePath+"/dashboard"} component={Dashboard}/>
+              <Route path={basePath+"/administrator"} component={Administrator}/>
             </Switch>
           </Router>
         </Provider>

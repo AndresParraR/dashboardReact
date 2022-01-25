@@ -107,18 +107,20 @@ const Navbar = (props) => {
 
   const classes = useStyles();
 
+  const basePath = process.env.REACT_APP_BASE_URL
+
   const [anchorEl, setAnchorEl] = useState(null);
   const [links, setLinks] = useState([
     {
       icon: <DashboardIcon />,
       title: 'Dashboard',
-      route: '/dashboard',
+      route: basePath+'/dashboard',
       isFocused: true
     },
     {
       icon: <AccountCircleIcon />,
       title: 'Administrator',
-      route: '/administrator',
+      route: basePath+'/administrator',
       isFocused: false
     },
   ]);
