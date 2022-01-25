@@ -18,7 +18,6 @@ class Bar extends React.Component {
       ]
     };
 
-
     var type = 'Bar'
 
     return (
