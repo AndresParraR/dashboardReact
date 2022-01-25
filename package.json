@@ -1,5 +1,6 @@
 {
-  "name": "https://andresparrar.github.io/dashboardReact/",
+  "name": "dashboardReact",
+  "homepage": "https://andresparrar.github.io/dashboardReact/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
