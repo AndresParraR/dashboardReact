@@ -1,0 +1,52 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  overflow-x: hidden;
+  font-size: 16px;
+}
+html{
+  overflow-y: scroll;
+}
+#root{
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: #eee;
+}
+a{
+  text-decoration: none;
+}
+.ct-chart{
+  width: 100%;
+}
+.chart-white .ct-label{
+  color: hsla(0,0%,100%,.7);
+}
+.chart-white .ct-series-a .ct-bar, .chart-white .ct-series-a .ct-line, .chart-white .ct-series-a .ct-point, .chart-white .ct-series-a .ct-slice-donut{
+  stroke: hsla(0,0%,100%,.8);
+}
+.chart-white .ct-grid{
+ stroke: hsla(0,0%,100%,.2);
+}
+.ct-label{
+  line-height: 1;
+}
+.icon-small{
+  font-size: 18px !important;
+}
+.d-flex{
+  display: flex;
+}
+.divider-semi-white{
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.selected > div{
+  background-color: #000
+}
+
+.selected > div:hover{
+  background-color: #000
+}
